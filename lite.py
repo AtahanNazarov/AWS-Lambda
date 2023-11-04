@@ -4,7 +4,7 @@ from io import BytesIO
 from PIL import Image
 import requests
 
-interpreter = tflite.Interpreter(model_path='C:\AWS-Lambda\models\lite_model.tflite')
+interpreter = tflite.Interpreter(model_path='model.tflite')
 interpreter.allocate_tensors()
 
 input_index = interpreter.get_input_details()[0]['index']
